@@ -698,7 +698,7 @@ body {
 
 .footer-form-input {
   width: 100%;
-  min-width: 396px;
+  max-width: 396px;
   margin: 0 auto;
 }
 
