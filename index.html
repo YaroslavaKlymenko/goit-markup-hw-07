@@ -21,6 +21,57 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
+    <div class="js-menu-container">
+      <span class="js-close-menu"
+        ><svg class="">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+        </span>
+      <ul class="sidebar-list">
+        <li>
+          <a class="sidebar-list-a current" href="./index.html">Studio</a>
+        </li>
+        <li><a class="sidebar-list-a" href="./portfolio.html">Portfolio</a></li>
+        <li><a class="sidebar-list-a" href="#">Contacts</a></li>
+      </ul>
+
+      <div class="sidebar-wrapper">
+        <div class="sidebar-contacts">
+          <a class="sidebar-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          <a  class="sidebar-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </div>
+        <ul class="sidebar-buttons">
+          <li class="sidebar-button"> 
+            <a class="team-member-button" href="#">
+              <svg class="icon-teams">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="sidebar-button">
+            <a class="team-member-button" href="#">
+              <svg class="icon-teams">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="sidebar-button">
+            <a class="team-member-button" href="#">
+              <svg class="icon-teams">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="sidebar-button">
+            <a class="team-member-button" href="#">
+              <svg class="icon-teams">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <header class="header">
       <div class="container header-box">
         <a class="header-logo" href="#"
@@ -59,10 +110,31 @@
             +11 (000) 111-11-11
           </a>
         </div>
+        <div class="container-menu-button">
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+      </div>
       </div>
     </header>
     <main>
-      <section class="solutions section">
+      <section class="solutions-section">
         <div class="container">
           <h1 class="section-caption">Effective Solutions for Your Business</h1>
           <button type="button" class="section-button" data-modal-open>
@@ -150,10 +222,10 @@
           </div>
         </div>
       </section>
-      <section class="description section">
+      <section class="description">
         <div class="container description-box">
-          <ul class="description-paragraphs description-images">
-            <li class="description-texts description-image">
+          <ul class="description-paragraphs">
+            <li class="description-texts ">
               <div class="description-block">
                 <svg class="description-icon">
                   <use href="./images/icons.svg#icon-antenna"></use>
@@ -165,7 +237,7 @@
                 the perfect and creative solution.
               </p>
             </li>
-            <li class="description-texts description-image">
+            <li class="description-texts ">
               <div class="description-block">
                 <svg class="description-icon">
                   <use href="./images/icons.svg#icon-clock"></use>
@@ -177,7 +249,7 @@
                 within the shortest possible time.
               </p>
             </li>
-            <li class="description-texts description-image">
+            <li class="description-texts ">
               <div class="description-block">
                 <svg class="description-icon">
                   <use href="./images/icons.svg#icon-diagram"></use>
@@ -189,7 +261,7 @@
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li class="description-texts description-image">
+            <li class="description-texts ">
               <div class="description-block">
                 <svg class="description-icon">
                   <use href="./images/icons.svg#icon-clock"></use>
@@ -203,7 +275,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> 
       <section class="examples-section">
         <div class="container">
           <h2 class="example-header">What Are We Doing</h2>
@@ -211,6 +283,7 @@
             <li class="examples-items">
               <img
                 class="examles-images"
+                srcset="./images/photo1.jpg 1x, ./images/photo1@2x.jpg 2x"
                 src="./images/photo1.jpg"
                 alt="computer"
                 width="360"
@@ -220,6 +293,7 @@
             <li class="examples-items">
               <img
                 class="examles-images"
+                srcset="./images/photo2.jpg 1x, ./images/photo2@2x.jpg 2x"
                 src="./images/photo2.jpg"
                 alt="screens"
                 width="360"
@@ -229,6 +303,7 @@
             <li class="examples-items">
               <img
                 class="examles-images"
+                srcset="./images/photo3.jpg 1x, ./images/photo3@2x.jpg 2x"
                 src="./images/photo3.jpg"
                 alt="screen"
                 width="360"
@@ -238,13 +313,14 @@
           </ul>
         </div>
       </section>
-      <section class="team section">
+      <section class="team">
         <div class="container">
           <h2 class="team-caption">Our Team</h2>
           <ul class="team-members">
             <li class="team-member">
               <img
                 class="team-member-image"
+                srcset="./images/photo4.jpg 1x, ./images/photo4@2x.jpg 2x"
                 src="./images/photo4.jpg"
                 alt="Marc Guerrero"
                 width="264"
@@ -288,6 +364,7 @@
             <li class="team-member">
               <img
                 class="team-member-image"
+                srcset="./images/photo5.jpg 1x, ./images/photo5@2x.jpg 2x"
                 src="./images/photo5.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -332,6 +409,7 @@
             <li class="team-member">
               <img
                 class="team-member-image"
+                srcset="./images/photo6.jpg 1x, ./images/photo6@2x.jpg 2x"
                 src="./images/photo6.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -376,6 +454,7 @@
             <li class="team-member team-member-last-child">
               <img
                 class="team-member-image"
+                srcset="./images/photo7.jpg 1x, ./images/photo7@2x.jpg 2x"
                 src="./images/photo7.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -419,8 +498,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="section-customers">
+      </section> 
+     <section class="section-customers">
         <div class="container">
           <h2 class="customers-caption">Customers</h2>
           <ul class="customers-buttons">
@@ -470,7 +549,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+  <footer class="footer">
       <div class="footer-text container">
         <div class="footer-logo-description">
           <a class="footer-logo" href="#"
@@ -534,6 +613,13 @@
         </div>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
