@@ -799,10 +799,10 @@ display: unset;
 
 @media screen and (min-width: 1121px) {
 
+  .container {
+  width: 1158px;
+}
 
-  .header-logo {
-    margin-left: 156px;
-  }
   
   .header-contacts-item {
     margin-right: 40px;
@@ -820,7 +820,6 @@ display: unset;
   .header-contacts {
     display: flex;
     flex-direction: row;
-    margin-right: 156px;
   }
   
     .container-menu-button {
@@ -839,10 +838,6 @@ display: unset;
 
  .projects-examples:nth-child(3n) {
   margin-right: 0;
- }
-
- .footer-logo-description {
-  margin-left: 156px;
  }
 
  .footer-box {

@@ -14,7 +14,6 @@ body {
 }
 
 .container {
-  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -1024,6 +1023,15 @@ body {
 
 @media screen and (max-width: 768px) {
 
+  .container {
+    width: 428px;
+  }
+
+  .header-box {
+    margin: 0;
+  }
+
+
   .modal {
     width: 95%;
     max-width: 450px;
@@ -1162,6 +1170,11 @@ margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1220px) {
+
+  .container {
+    width: 768px;
+  }
+
 
 
   .container-menu-button {
@@ -1308,9 +1321,10 @@ display: unset;
 
 @media screen and (min-width: 1221px) {
 
-.header-logo {
-  margin-left: 156px;
-}
+  .container {
+    width: 1158px;
+  }
+
 
 .header-contacts-item {
   margin-right: 40px;
@@ -1328,7 +1342,6 @@ display: unset;
 .header-contacts {
   display: flex;
   flex-direction: row;
-  margin-right: 156px;
 }
 
   .container-menu-button {
@@ -1368,9 +1381,14 @@ display: unset;
   margin-bottom: 120px;
 }
 
-.team-caption {
+.team {
   padding-top: 120px;
 }
+
+.team-caption {
+  height: auto;
+}
+
 
 .team-member {
   margin-right: 24px;
@@ -1396,9 +1414,6 @@ display: unset;
   padding-bottom: 120px;
 }
 
-.footer-logo-description {
-  margin-left: 156px;
-}
 
 .footer-social-media {
   margin-right: 80px;
