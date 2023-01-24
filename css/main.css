@@ -1023,9 +1023,6 @@ body {
 
 @media screen and (max-width: 768px) {
 
-  .container {
-    width: 428px;
-  }
 
   .header-box {
     margin: 0;
@@ -1169,13 +1166,15 @@ margin: 0 auto;
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 1220px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
 
   .container {
     width: 768px;
   }
 
-
+.header-contacts-item {
+  font-size: 12px;
+}
 
   .container-menu-button {
     display: none;
@@ -1208,8 +1207,19 @@ display: unset;
 }
 
 .description{
-    padding-top: 96px;
-    padding-bottom: 96px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.description-texts {
+  margin-right: 0;
+}
+
+.description-header {
+  font-size: 36px;
 }
 
 .description-block{
@@ -1224,6 +1234,7 @@ display: unset;
 
 .description-information{
   width: 356px;
+  font-size: 16px;
 }
 
 .examples-section{
@@ -1319,7 +1330,7 @@ display: unset;
 }
 }
 
-@media screen and (min-width: 1221px) {
+@media screen and (min-width: 1201px) {
 
   .container {
     width: 1158px;

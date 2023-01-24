@@ -715,6 +715,10 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1120px) {
 
+.container {
+  width: 768px;
+}
+
   .modal {
     width: 408px;
   height: 584px;
